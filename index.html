@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>new website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <style>
+            @media screen and (max-width:600px){
+                .main-header{display: block!important;text-align: center;}
+                .menu ul li{display: block!important;margin: 10px!important;
+                background-color: blue!important;color: white!important}
+                .menu ul li:hover{background-color: white!important;color: blue!important;}
+            }
+           
+            *{margin: 0;padding: 0;}
+            #header{background-color: black;color: white;}
+            .main-header{display: flex;justify-content: space-between;align-items: center;
+            padding: 10px;}
+            .menu ul li{display: inline-block;padding: 12px 40px;
+            background-color: white;color: blue;margin: 0px 5px;
+        border-bottom: 3px solid blue;border-radius: 6px;font-size: 18px;
+    font-weight: bold;}
+    .menu ul li:hover{background-color: blue;color: white;border-bottom: 3px solid white;
+    transition: all 2s;transform: rotate3d(1,1,1,360deg);cursor: pointer;}
+.logo img{width: 60px;height: 60px;object-fit: cover;
+border-radius: 50%;}
+        </style>
+        <h1 id="msg"></h1>
+       <section id="header">
+        <div class="main-header">
+            <div class="logo">
+             <img src="./amber-fort.jpeg"/>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+                    <li>Blog</li>
+                    <li>Inquiry</li>
+                </ul>
+            </div>
+        </div>
+       </section>
+    </body>
+</html>
